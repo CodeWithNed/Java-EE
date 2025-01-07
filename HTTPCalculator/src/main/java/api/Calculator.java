@@ -16,8 +16,7 @@ public class Calculator extends HttpServlet {
         String operation = req.getParameter("o");
 
         double result = switch (operation) {
-            case " " -> x + y;
-            case "+" -> x + y;
+            case " ", "+" -> x + y;
             case "-" -> x - y;
             case "*" -> x * y;
             case "/" -> y != 0 ? (double) x / y : Double.NaN;

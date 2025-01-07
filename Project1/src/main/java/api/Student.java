@@ -22,6 +22,9 @@ public class Student extends HttpServlet {
             case "/" -> y != 0 ? (double) x / y : Double.NaN;
             default -> Double.NaN;
         };
+        if (operation.equals(" ")){
+            operation = "+";
+        }
 
         resp.getWriter().println("x " + operation + " y = " + result);
     }

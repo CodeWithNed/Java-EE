@@ -17,6 +17,7 @@ public class Student extends HttpServlet {
 
         double result = switch (operation) {
             case " " -> x + y;
+            case "+" -> x + y;
             case "-" -> x - y;
             case "*" -> x * y;
             case "/" -> y != 0 ? (double) x / y : Double.NaN;

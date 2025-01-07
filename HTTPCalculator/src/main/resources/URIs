@@ -1,0 +1,2 @@
+http://localhost:8090/calculator?x=10&y=20
+http://localhost:8090/calculator?x=10&y=20&o=+

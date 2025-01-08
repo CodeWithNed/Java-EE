@@ -29,7 +29,7 @@ public class Student extends HttpServlet {
         }
 
         if (name != null && age != null && course != null) {
-            students.add("Name: " + name + ", Age: " + age + ", Course: " + course);
+            students.add("Name: " + name + ", Age: " + age + ", Course: " + course + " with " + test);
         }
 
         response.sendRedirect("index.jsp");
